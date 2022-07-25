@@ -1,57 +1,15 @@
-/* General CSS */
-main{
-    width: 70%;
-    margin: 0 auto;
+.main{
     box-sizing: border-box;
     overflow: hidden;
-}
-.header{
-    background-color: gray;
-    display: flex;
-    text-align: center;
-    height: 82px;
-    justify-content: space-around;
-}
-.espaciologo{
-    height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-.div_nav{
-    height: auto;
-    width: auto;
-    height: auto;
-    padding-top: 25px;
 }
 .logo{
     display: block;
     width: 180px;
 }
-.image{
-    max-width: 100%;
-    max-height: 100%;
+.navbar{
+    background-color: #333;
 }
-.navegacion{
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-.navegacion li{
-    display: inline;
-    padding-left:3px;
-    padding-right:3px;
-}
-/* a{
-    text-decoration: none;
-    color: white;
-}
-a:hover {
-    color:black;
-    background-color:lightgray;
-} */
-/* HTML INDEX */
+/* HTML INDEX INICIO */
 .contenido1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -226,6 +184,8 @@ a:hover {
     height: 30px;
     margin: 0 auto
 }
+/* HTML INDEX FIN */
+
 /* HTML About me */
 .contenido{
     height: 200px;
@@ -284,8 +244,16 @@ a:hover {
     background-color: blue;
     width: auto;
     height: auto;
-    padding: 10px 20px ;
-    margin: 80px auto;
+    padding-top: 1rem;
+    margin: 75px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.contenido8 p{
+    color: white;
+}
+.contenido8 a{
+    vertical-align: middle;
 }
 .contenido9{
     height: 250px;
@@ -295,83 +263,13 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* HTML Contacto */
-.contenido_contacto{
-    text-align: center;
-}
-.contenido_contacto p{
-    text-align: justify;
-}
-.div_formulario{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.formulario{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin: 20px auto;
-    width: 85%;
-}
-.left_div{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-color: #fb8c3ee8;
-}
-.left_div_contenido{
-    padding: 65px;
-    padding-top: 33%;
-    padding-bottom: 33%;
-    text-align: center;
-    width: auto;
+#div_contenido8{
+    width: 171px;
     height: auto;
 }
-.llenado{
-    width: 90%;
-    height: 30px;
-    margin: .5rem;
-}
-.div_llenado{
-    margin: .5rem;
-}
-.div_llenado input{
-    margin: 0.5rem;
-}
-.div_llenado select{
-    margin: 0.5rem;
-}
-textarea{
-    width: 100%;
-}
-.mapa{
-    aspect-ratio: 16 / 9;
-    width: 100%;
-}
-/*  
-    padding: 10px;
-}
-.i_1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-} */
-/* HTML SKILLS */
-/* .container_table{
-    text-align: center;
-}
-.tabla{
-    margin: 0 auto;
-    width: 100%;
-}
-.tabla_contenedor{
-    height: auto;
-    width: auto;
-}
-.imagen_tabla{
-    height: 100%;
-    width: 100%;
-} */
+/* HTML ABOUT ME FIN */
+
+
 /* HTML SERVICIOS */
 .servicios_video{
     grid-column: 1/3;
@@ -486,8 +384,18 @@ textarea{
     background-size: 100%;
     margin: 5%;
 }
+/* HTML HABILIDADES */
+.table{
+    height: 600px;
+}
+
+.h1_table{
+    margin-top: 15px;
+}
+/* HTML HABILIDADES FIN*/
+
 /* HTML PORTAFOLIO */
-.container {
+.container_text h1{
     margin: 2rem auto;
     text-align: center;
 }
@@ -513,233 +421,54 @@ textarea{
 .gallery-item:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.8);
 }
-/* FOOTER GENERAL */
-/* footer{
-    padding-top: 20px;
-    padding-bottom: 5px;
-}
-.footer{
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    padding-top: 27px;
+/* HTML Contacto */
+.contenido_contacto{
     text-align: center;
 }
-.footer li{
-    display: inline;
-    padding-left:3px;
-    padding-right:3px;
+.contenido_contacto p{
+    text-align: justify;
 }
-.footer li a{
-    text-decoration: double;
-    color: black;
-} */
-@media only screen and (max-width:1080px){
-    table{
-        display: block;
-        overflow-x: auto;
-    }
-    .div_tabla{
-        display: block;
-        overflow-x: auto;
-    }
-    .tabla{
-        display: block;
-        overflow-x: auto;
-    }
-    main{
-        margin:0 auto;
-    }
-    .navegacion li{
-        display: none;
-    }
-    .div_nav{
-        background-image: url(/media/bars-solid.svg);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: 20px;
-        padding-left: 24px;
-    }
-    .div_modelling{
-        grid-column: 1/3;
-        grid-row: 2/3;
-        text-align: justify;
-        height: auto;
-        width: auto;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    .div_modelling h1{
-        text-align: center;
-    }
-    .div_modelling_imagen{
-        grid-column: 1/3;
-        grid-row: 3/4;
-        height: 450px;
-    }
-    .div_rigging{
-        grid-column: 1/3;
-        grid-row: 4/5;
-        text-align: justify;
-        height: auto;
-        width: auto;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    .div_rigging h1{
-        text-align: center;
-    }
-    .div_rigging_imagen{
-        grid-column: 1/3;
-        grid-row: 5/6;
-        height: 450px;
-    }
-    .div_texturing{
-        grid-column: 1/3;
-        grid-row: 6/7;
-        text-align: justify;
-        height: auto;
-        width: auto;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    .div_texturing h1{
-        text-align: center;
-    }
-    .div_texturing_imagen{
-        grid-column: 1/3;
-        grid-row: 7/8;
-        height: 450px;
-    }
-    .div_nodes{
-        grid-column: 1/3;
-        grid-row: 8/9;
-        text-align: justify;
-        height: auto;
-        width: auto;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    .div_nodes h1{
-        text-align: center;
-    }
-    .div_nodes_imagen{
-        grid-column: 1/3;
-        grid-row: 9/10;
-        height: 450px;
-    }
-    .div_tracking{
-        grid-column: 1/3;
-        grid-row: 10/11;
-        text-align: justify;
-        height: auto;
-        width: auto;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    .div_tracking h1{
-        text-align: center;
-    }
-    .div_tracking_imagen{
-        grid-column: 1/3;
-        grid-row: 11/12;
-        height: 350px;
-    }
+.div_formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-@media only screen and (max-width:850px){
-    .navegacion li{
-        display: none;
-    }
-    .div_nav{
-        background-image: url(/media/bars-solid.svg);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: 20px;
-        padding-left: 24px;
-    }
-    main{
-        overflow-y: auto;
-    }
-    .item1{
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
-    #div_imagen{
-        grid-column: 1/3;
-        grid-row: 3/4;
-        height: 200px;
-        width: 85%;
-    }
-    .item3{
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-    .item4{
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-    .item5{
-        grid-column: 1/3;
-        grid-row: 5/6;
-    }
-    #div_item6{
-        height: 200px;
-        width: 85%;
-    }
-    .item6{
-        grid-column: 1/3;
-        grid-row: 7/8;
-    }
-    .item7{
-        grid-column: 1/3;
-        grid-row: 6/7;
-    }
-    .item8{
-        grid-column: 1/3;
-        grid-row: 8/9;
-    }
-    .contenido2{
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-    .contenido3{
-        grid-column: 1/3;
-        grid-row: 2/3;
-        height: 200px;
-        width: 85%;
-    }
-    .contenido4{
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-    .contenido6{
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-    .contenido5{
-        grid-column: 1/3;
-        grid-row: 5/6;
-        height: 200px;
-        width: 85%;
-    }
-    .contenido7{
-        grid-column: 1/3;
-        grid-row: 6/7;
-    }
-    .contenido8{
-        grid-column: 1/3;
-        grid-row: 7/8;
-    }
-    .formulario{
-    grid-column: 1/3;
-    grid-row: 2/3;
-    }
-    .left_div{
-    grid-column: 1/3;
+.formulario{
+    grid-column: 2/3;
     grid-row: 1/2;
+    margin: 20px auto;
+    width: 85%;
+}
+.left_div{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #fb8c3ee8;
+}
+.left_div_contenido{
+    padding: 65px;
+    padding-top: 33%;
+    padding-bottom: 33%;
+    text-align: center;
+    width: auto;
     height: auto;
-    }
-    .left_div_contenido{
-        padding: 10%;
-    }
+}
+.llenado{
+    width: 90%;
+    height: 30px;
+    margin: .5rem;
+}
+.div_llenado{
+    margin: .5rem;
+}
+.div_llenado input{
+    margin: 0.5rem;
+}
+.div_llenado select{
+    margin: 0.5rem;
+}
+textarea{
+    width: 100%;
+}
+.mapa{
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
