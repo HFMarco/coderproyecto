@@ -428,8 +428,22 @@
 .gallery-item:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.8);
 }
+.container_carrousel{
+    margin: 0 auto;
+    height: 950px;
+}
+.carousel-item{
+    height: 950px;
+}
+.carousel-item img{
+    height: 950px;
+}
+#carrusel_id{
+    margin-top: 60px;
+}
 /* HTML Contacto */
 .contenido_contacto{
+    margin-top: 25px;
     text-align: center;
 }
 .contenido_contacto p{
