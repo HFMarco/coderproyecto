@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+$colorfondo: #333;
+$colorfondo_2: #fb8c3ee8;
+$tipografía: 'Work Sans', sans-serif;
+
 .main{
     box-sizing: border-box;
     overflow: hidden;
+    font-family: $tipografía;
 }
 .logo{
     display: block;
     width: 180px;
 }
 .navbar{
-    background-color: #333;
+    background-color: $colorfondo;
 }
 /* HTML INDEX INICIO */
 .contenido1{
@@ -45,9 +51,10 @@
     margin: 0 auto;
     text-align: center;
     text-align: justify;
-}
-.item1 h1{
-    text-align: center;
+
+    h1{
+        text-align: center;
+    }
 }
 .item2{
     background-image: url(../media/ss.png);
@@ -116,9 +123,10 @@
     text-align: center;
     text-align: justify;
     margin-top: 30px;
-}
-.item7 h2{
-    text-align: center;
+
+    h2{
+        text-align: center;
+    }
 }
 .item8{
     grid-column: 1/3;
@@ -129,15 +137,16 @@
     
 }
 .boton_referencia{
-    background-color: rgb(241, 148, 55);
+    background-color: $colorfondo_2;
     width: 250px;
     height: auto;
     padding-top: 1rem;
     text-align: center;
-}
-.boton_referencia a{
+
+    a{
     color: white;
     text-decoration: none;
+    }
 }
 .cubo_container{
     grid-column: 1/3;
@@ -211,7 +220,7 @@
     height: auto;
     min-height: 20rem;
     padding: 8rem 0;
-    background-color: rgb(250, 135, 53);
+    background-color: $colorfondo_2;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -258,7 +267,7 @@
 .contenido8{
     grid-column: 1/3;
     grid-row: 5/6;
-    background-color: rgb(241, 148, 55);
+    background-color: $colorfondo_2;
     width: auto;
     height: auto;
     padding-top: 1rem;
@@ -473,7 +482,7 @@
 .left_div{
     grid-column: 1/2;
     grid-row: 1/2;
-    background-color: #fb8c3ee8;
+    background-color: $colorfondo_2;
 }
 .left_div_contenido{
     padding: 65px;
