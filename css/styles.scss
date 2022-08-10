@@ -3,6 +3,7 @@ $colorfondo: #333;
 $colorfondo_2: #fb8c3ee8;
 $tipografía: 'Work Sans', sans-serif;
 
+
 .main{
     box-sizing: border-box;
     overflow: hidden;
@@ -209,6 +210,7 @@ $tipografía: 'Work Sans', sans-serif;
 /* HTML INDEX FIN */
 
 /* HTML About me */
+
 .contenido{
     height: 200px;
     margin: 30px;
@@ -226,6 +228,7 @@ $tipografía: 'Work Sans', sans-serif;
     background-attachment: scroll;
     background-size: cover;
 }
+
 .contenido2{
     text-align: center;
     height: auto;
@@ -418,6 +421,43 @@ $tipografía: 'Work Sans', sans-serif;
 
 .h1_table{
     margin-top: 15px;
+}
+// Mixin
+@mixin parametros($width, $background, $decoration){
+    width: $width;
+    background-color: $background;
+    text-decoration: $decoration;
+}
+.contenedor_conceptos{
+    @include parametros(100%,white ,justify );
+    padding-top: 25px;
+}
+// Extend
+.concepto{
+    font-size: x-large;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+.concepto2{
+    @extend .concepto;
+    padding-top: 20px;
+    @include parametros(100%, white ,center )
+}
+// Map
+$map:(
+    text1 : red,
+    text2 : blue,
+    text3 : yellow,
+    text4 : purple
+);
+@each $text, $color in $map{
+    .skills-#{$text}{
+        background-color: white  ;
+        color: $color;
+        text-align: justify;
+        font-size: x-large;
+    }
 }
 /* HTML HABILIDADES FIN*/
 
